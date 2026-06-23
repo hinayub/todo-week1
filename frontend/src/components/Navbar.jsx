@@ -1,4 +1,3 @@
-import React from "react";
 import todoLogo from "../assets/todo-logo.png";
 import { Link } from "react-router-dom";
 
@@ -18,6 +17,9 @@ function Navbar() {
           </Link>
           <Link to="/about" className="text-gray-700 hover:text-blue-500">
             About
+          </Link>
+          <Link to="/login" className="text-gray-700 hover:text-blue-500">
+            Login
           </Link>
         </div>
       </div>
