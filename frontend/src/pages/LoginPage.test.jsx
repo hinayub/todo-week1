@@ -18,17 +18,14 @@ describe("Login Form Validation", () => {
     expect(emailInput.checkValidity()).toBe(true);
   });
 
-  it("rejects an invalid email", () => {
+  it("reject an invalid email", () => {
     render(
       <MemoryRouter>
         <LoginPage />
       </MemoryRouter>,
     );
-
     const emailInput = screen.getByLabelText(/email address/i);
-
     emailInput.value = "hina123";
-
     expect(emailInput.checkValidity()).toBe(false);
   });
 
